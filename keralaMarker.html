@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_968d19033a8e48f8a7a2ebf37b5b9c29 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_968d19033a8e48f8a7a2ebf37b5b9c29" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_968d19033a8e48f8a7a2ebf37b5b9c29 = L.map(
+                                  'map_968d19033a8e48f8a7a2ebf37b5b9c29',
+                                  {center: [10.4009979,76.1742030544245],
+                                  zoom: 10,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_28ce046904d747408905cf14c1de31a4 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_968d19033a8e48f8a7a2ebf37b5b9c29);
+
+        
+    
+
+            var marker_5f723e74d40242508dbb128cd3a7e58f = L.marker(
+                [10.5243,76.214],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_968d19033a8e48f8a7a2ebf37b5b9c29);
+            
+    
+            var popup_b86dde181cec4176868e185a52be74ae = L.popup({maxWidth: '300'});
+
+            
+                var html_181f284e18e34231a506fb5675ec87ba = $('<div id="html_181f284e18e34231a506fb5675ec87ba" style="width: 100.0%; height: 100.0%;">Vadakkunnathan temple</div>')[0];
+                popup_b86dde181cec4176868e185a52be74ae.setContent(html_181f284e18e34231a506fb5675ec87ba);
+            
+
+            marker_5f723e74d40242508dbb128cd3a7e58f.bindPopup(popup_b86dde181cec4176868e185a52be74ae);
+
+            
+        
+    
+
+            var marker_c897c82cfd484de29d6488bccb708139 = L.marker(
+                [10.094,76.493],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_968d19033a8e48f8a7a2ebf37b5b9c29);
+            
+    
+            var popup_3deceb2430784734bb6c580a3b5e952f = L.popup({maxWidth: '300'});
+
+            
+                var html_b6c7da4e561746529eacd71d184789bb = $('<div id="html_b6c7da4e561746529eacd71d184789bb" style="width: 100.0%; height: 100.0%;">Unma&#39;s residence</div>')[0];
+                popup_3deceb2430784734bb6c580a3b5e952f.setContent(html_b6c7da4e561746529eacd71d184789bb);
+            
+
+            marker_c897c82cfd484de29d6488bccb708139.bindPopup(popup_3deceb2430784734bb6c580a3b5e952f);
+
+            
+        
+</script>
